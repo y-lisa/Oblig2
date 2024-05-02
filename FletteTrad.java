@@ -5,10 +5,6 @@ import java.util.HashMap;
 
 public class FletteTrad implements Runnable{
     Monitor2 monitor2;
-    ArrayList<HashMap<String, Subsekvens>> array;
-    HashMap<String, Subsekvens> hash;
-    HashMap<String, Subsekvens> map;
-    HashMap<String, Subsekvens> nyHash;
 
     public FletteTrad(Monitor2 monitor2){
         this.monitor2 = monitor2;
