@@ -16,16 +16,10 @@ public class FletteTrad implements Runnable{
             HashMap<String, Subsekvens> subsekvens1 = monitor2.taUt();
             HashMap<String, Subsekvens> subsekvens2 = monitor2.taUt();
 
-            // Sjekker om det er nok HashMap-er
-            if (subsekvens1 == null || subsekvens2 == null){
-                System.out.println("Ikke nok HashMap-er!");
-                System.exit(0);
-                
-            } else {
-            // Ellers slaas de sammen
+            // Slaar sammen HashMap-ene
             HashMap<String, Subsekvens> flettet = monitor2.slaaSammen(subsekvens1, subsekvens2);
             monitor2.settInn(flettet);
-            }
-        } 
+            
+        } System.exit(0);   // kun 1 traad igjen
     }
 }
